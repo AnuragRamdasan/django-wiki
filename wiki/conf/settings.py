@@ -98,3 +98,5 @@ MAX_REVISION_AGE = getattr(django_settings, 'MAX_REVISION_AGE', 365)
 
 # Maximum allowed revisions per minute for any given user or IP
 REVISIONS_PER_MINUTE = getattr(django_settings, 'WIKI_REVISIONS_PER_MINUTE', 3)
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTOCOL', 'https') 
